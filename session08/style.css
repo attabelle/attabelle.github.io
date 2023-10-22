@@ -1,0 +1,33 @@
+.block{
+
+  overflow: hidden;
+  margin-bottom:20px;
+  border:10px solid;
+  text-align: left;
+  font-size:20px;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
+.block img{
+  cursor: pointer;
+  float: right;
+  width: 525px;
+  height: 300px;
+ }
+
+.block img:hover{
+  animation-fill-mode: forwards;
+  animation-name: changescale;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes changescale{
+  from{transform: scale(1,1) }
+  to{transform: scale(1.5,1.5)}
+
+}
