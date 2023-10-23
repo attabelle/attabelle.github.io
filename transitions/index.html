@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Animation Assignment</title>
+    <style>
+
+        .page{
+            width: 1400px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+        }
+        .container {
+            width: 1400px;
+            height: 400px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.5s;
+            display: inline-flex;
+        }
+
+        .element img{
+            width: 400px;
+            height: 150px;
+            transition: transform 0.5s, filter 0.5s;
+            display: inline-flex;
+            align-items: center;
+            align-content: center;
+        }
+
+        .container:hover .element img{
+            transform: scale(1.5); /* Scales the element on hover */
+            filter: invert(1) hue-rotate(90deg);/* Applies grayscale filter on hover */
+            background-color: /* Changes the background color on hover */
+        }
+
+        .container:hover{
+            background-color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+   <div class="page">
+     <div class="container">
+        <div class="element"><img src="img/arttabelle_white.png" alt="arttabelle logo" /></div>
+    </div>
+</body>
