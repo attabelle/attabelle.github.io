@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Center the video horizontally and vertically using Flexbox */
+ 
+ body{
+  background-color: black;
+ }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* 100% of the viewport height */
+  }
+
+  .container source{
+    width: 20%;
+    height: 20%;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <video controls loop style="width:600px">
+      <source src="arttabelleblue.mp4" type="video/mp4">
+    </video>
+  </div>
+</body>
+</html>
